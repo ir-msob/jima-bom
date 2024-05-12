@@ -9,7 +9,27 @@
     <description>This is the Bill of Materials (BOM) for the Jima framework. It manages the dependencies used across the
         different modules of the project.
     </description>
+    <url>http://www.msob.ir</url>
     <packaging>pom</packaging>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Jima</name>
+            <email>ask@msob.ir</email>
+            <organization>MSob</organization>
+            <organizationUrl>http://www.msob.ir</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <url>scm:git:https://github.com/ir-msob/jima-bom.git</url>
+        <connection>scm:git:https://github.com/ir-msob/jima-bom.git</connection>
+        <developerConnection>scm:git:https://github.com/ir-msob/jima-bom.git</developerConnection>
+    </scm>
     <properties>
         <jima-parent-bom.version>1.1.10</jima-parent-bom.version>
         <jima-crud.version>1.1.10</jima-crud.version>
