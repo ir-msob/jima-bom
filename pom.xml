@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ir.msob.jima.bom</groupId>
     <artifactId>jima-bom</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <name>jima-parent-bom</name>
     <description>This is the Bill of Materials (BOM) for the Jima framework. It manages the dependencies used across the
         different modules of the project.
@@ -12,7 +12,7 @@
     <packaging>pom</packaging>
     <properties>
         <jima-parent-bom.version>1.1.10</jima-parent-bom.version>
-        <jima-crud.version>1.1.9</jima-crud.version>
+        <jima-crud.version>1.1.10</jima-crud.version>
         <jima-security.version>1.1.7</jima-security.version>
         <jima-cloud-rsocket.version>1.1.1</jima-cloud-rsocket.version>
     </properties>
