@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ir.msob.jima.bom</groupId>
     <artifactId>jima-bom</artifactId>
-    <version>1.1.2</version>
+    <version>${jima-bom.version}</version>
     <name>jima-parent-bom</name>
     <description>This is the Bill of Materials (BOM) for the Jima framework. It manages the dependencies used across the
         different modules of the project.
@@ -31,10 +31,12 @@
         <developerConnection>scm:git:https://github.com/ir-msob/jima-bom.git</developerConnection>
     </scm>
     <properties>
-        <jima-parent-bom.version>1.1.10</jima-parent-bom.version>
-        <jima-crud.version>1.1.10</jima-crud.version>
-        <jima-security.version>1.1.7</jima-security.version>
-        <jima-cloud-rsocket.version>1.1.1</jima-cloud-rsocket.version>
+        <!-- Jima -->
+        <jima-commons.version>1.2.0</jima-commons.version>
+        <jima-bom.version>1.2.1</jima-bom.version>
+        <jima-crud.version>1.2.1</jima-crud.version>
+        <jima-security.version>1.2.1</jima-security.version>
+        <jima-cloud-rsocket.version>1.2.1</jima-cloud-rsocket.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
         <maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
@@ -44,6 +46,8 @@
         <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
         <!-- https://mvnrepository.com/artifact/org.sonatype.central/central-publishing-maven-plugin -->
         <central-publishing-maven-plugin.version>0.4.0</central-publishing-maven-plugin.version>
+        <!-- https://mvnrepository.com/artifact/com.hbakkum.maven.plugins/resolve-parent-version-maven-plugin -->
+        <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -51,7 +55,7 @@
             <dependency>
                 <groupId>ir.msob.jima.parent</groupId>
                 <artifactId>jima-parent-bom</artifactId>
-                <version>${jima-parent-bom.version}</version>
+                <version>${jima-commons.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -238,4 +242,20 @@
             </build>
         </profile>
     </profiles>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.hbakkum.maven.plugins</groupId>
+                <artifactId>resolve-parent-version-maven-plugin</artifactId>
+                <version>${resolve-parent-version-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>resolve-parent-version</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
