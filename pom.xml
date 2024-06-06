@@ -37,6 +37,7 @@
         <jima-crud.version>1.2.1</jima-crud.version>
         <jima-security.version>1.2.1</jima-security.version>
         <jima-cloud-rsocket.version>1.2.1</jima-cloud-rsocket.version>
+        <jima-signature.version>1.2.1</jima-signature.version>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-gpg-plugin -->
         <maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
@@ -58,6 +59,13 @@
                 <version>${jima-commons.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- Signature -->
+            <dependency>
+                <groupId>ir.msob.jima.signature</groupId>
+                <artifactId>signature-starter-service</artifactId>
+                <version>${jima-signature.version}</version>
             </dependency>
 
             <!-- Cloud RSocket -->
