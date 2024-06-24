@@ -31,7 +31,7 @@
   </scm>
   <properties>
     <jima-signature.version>1.2.0</jima-signature.version>
-    <central-publishing-maven-plugin.version>0.4.0</central-publishing-maven-plugin.version>
+    <central-publishing-maven-plugin.version>0.5.0</central-publishing-maven-plugin.version>
     <jima-security.version>1.2.0</jima-security.version>
     <maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
     <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
