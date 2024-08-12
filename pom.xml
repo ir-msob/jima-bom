@@ -37,7 +37,7 @@
     <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
     <jima-bom.version>1.2.0</jima-bom.version>
     <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
-    <maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
+    <maven-gpg-plugin.version>3.2.5</maven-gpg-plugin.version>
     <jima-crud.version>1.2.0</jima-crud.version>
     <jima-commons.version>1.2.0</jima-commons.version>
     <jima-cloud-rsocket.version>1.2.0</jima-cloud-rsocket.version>
