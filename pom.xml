@@ -30,7 +30,7 @@
     <url>scm:git:https://github.com/ir-msob/jima-bom.git</url>
   </scm>
   <properties>
-    <central-publishing-maven-plugin.version>0.5.0</central-publishing-maven-plugin.version>
+    <central-publishing-maven-plugin.version>0.6.0</central-publishing-maven-plugin.version>
     <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
     <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
     <maven-gpg-plugin.version>3.2.6</maven-gpg-plugin.version>
