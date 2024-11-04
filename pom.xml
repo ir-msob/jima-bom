@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ir.msob.jima.bom</groupId>
   <artifactId>jima-bom</artifactId>
@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
   <name>jima-parent-bom</name>
   <description>This is the Bill of Materials (BOM) for the Jima framework. It manages the dependencies used across the
-        different modules of the project.</description>
+    different modules of the project.</description>
   <url>http://www.msob.ir</url>
   <licenses>
     <license>
@@ -30,21 +30,27 @@
     <url>scm:git:https://github.com/ir-msob/jima-bom.git</url>
   </scm>
   <properties>
+    <!-- Plugin Versions -->
     <central-publishing-maven-plugin.version>0.6.0</central-publishing-maven-plugin.version>
     <resolve-parent-version-maven-plugin.version>0.8</resolve-parent-version-maven-plugin.version>
     <maven-source-plugin.version>3.3.1</maven-source-plugin.version>
     <maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
     <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version>
+
+    <!-- Jima Framework Versions -->
     <jima-crud.version>1.3.0</jima-crud.version>
     <jima-commons.version>1.3.0</jima-commons.version>
     <jima-cloud-rsocket.version>1.3.0</jima-cloud-rsocket.version>
     <jima-signature.version>1.3.0</jima-signature.version>
     <jima-security.version>1.3.0</jima-security.version>
-    <maven-javadoc-plugin.version>3.11.1</maven-javadoc-plugin.version>
     <jima-bom.version>1.3.0</jima-bom.version>
+
+    <!-- Documentation Plugin Version -->
+    <maven-javadoc-plugin.version>3.11.1</maven-javadoc-plugin.version>
   </properties>
   <dependencyManagement>
     <dependencies>
+      <!-- Parent BOM -->
       <dependency>
         <groupId>ir.msob.jima.parent</groupId>
         <artifactId>jima-parent-bom</artifactId>
@@ -52,11 +58,15 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+
+      <!-- Signature Dependencies -->
       <dependency>
         <groupId>ir.msob.jima.signature</groupId>
         <artifactId>signature-starter-service</artifactId>
         <version>${jima-signature.version}</version>
       </dependency>
+
+      <!-- Cloud RSocket Dependencies -->
       <dependency>
         <groupId>ir.msob.jima.cloud.rsocket</groupId>
         <artifactId>rsocket-starter-client</artifactId>
@@ -82,6 +92,8 @@
         <artifactId>rsocket-starter-service-discovery-server</artifactId>
         <version>${jima-cloud-rsocket.version}</version>
       </dependency>
+
+      <!-- Security Dependencies -->
       <dependency>
         <groupId>ir.msob.jima.security</groupId>
         <artifactId>security-starter-restful-oauth2</artifactId>
@@ -112,6 +124,8 @@
         <artifactId>security-starter-rsocket-oauth2</artifactId>
         <version>${jima-security.version}</version>
       </dependency>
+
+      <!-- CRUD Dependencies -->
       <dependency>
         <groupId>ir.msob.jima.crud</groupId>
         <artifactId>crud-starter-restful</artifactId>

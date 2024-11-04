@@ -1,0 +1,56 @@
+= Jima BOM Project
+:toc: left
+:icons: font
+:source-highlighter: rouge
+
+== Introduction
+
+The Jima BOM Project is a Bill of Materials (BOM) for the Jima framework. It helps manage the versions of dependencies used across different modules of the project, ensuring compatibility and consistency.
+
+== Getting Started
+
+To get started with the Jima BOM Project, clone the repository and import it into your preferred IDE. Make sure you have Maven installed to manage the project dependencies.
+
+To use the Jima BOM in your project, add the following to your `pom.xml`:
+
+[source,xml]
+----
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>ir.msob.jima.bom</groupId>
+            <artifactId>jima-bom</artifactId>
+            <version>*</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+----
+
+== Usage
+
+Once the BOM is added to your project, you can use various Jima framework dependencies without specifying versions. For example:
+
+[source,xml]
+----
+<dependency>
+    <groupId>ir.msob.jima.crud</groupId>
+    <artifactId>crud-starter-restful</artifactId>
+</dependency>
+----
+
+== Contributing
+
+Contributions to the Jima BOM Project are welcome! Please fork the repository, make your changes, and submit a pull request. Before submitting, open an issue to discuss your proposed changes.
+
+== License
+
+The Jima BOM Project is licensed under the Apache License 2.0. Please see the `LICENSE` file for more details.
+
+== Contact
+
+For questions and suggestions, please contact us at:
+
+* Email: ask@msob.ir
+* Website: http://www.msob.ir
