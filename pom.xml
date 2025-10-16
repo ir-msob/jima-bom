@@ -90,6 +90,23 @@
                 <version>${jima-commons.version}</version>
             </dependency>
 
+            <!-- Process Dependencies -->
+            <dependency>
+                <groupId>ir.msob.jima.process</groupId>
+                <artifactId>process-starter-commons</artifactId>
+                <version>${jima-commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.process</groupId>
+                <artifactId>process-starter-activiti</artifactId>
+                <version>${jima-commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.process</groupId>
+                <artifactId>process-starter-restful-server</artifactId>
+                <version>${jima-commons.version}</version>
+            </dependency>
+
             <!-- Signature Dependencies -->
             <!--      <dependency>-->
             <!--        <groupId>ir.msob.jima.signature</groupId>-->
