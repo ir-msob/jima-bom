@@ -103,6 +103,11 @@
             </dependency>
             <dependency>
                 <groupId>ir.msob.jima.process</groupId>
+                <artifactId>process-starter-camunda</artifactId>
+                <version>${jima-commons.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.process</groupId>
                 <artifactId>process-starter-restful-server</artifactId>
                 <version>${jima-commons.version}</version>
             </dependency>
