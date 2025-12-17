@@ -149,12 +149,22 @@
             <!-- Security Dependencies -->
             <dependency>
                 <groupId>ir.msob.jima.security</groupId>
+                <artifactId>security-starter-restful-jwt</artifactId>
+                <version>${jima-security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.security</groupId>
+                <artifactId>security-starter-restful-jwt-test</artifactId>
+                <version>${jima-security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.security</groupId>
                 <artifactId>security-starter-restful-oauth2</artifactId>
                 <version>${jima-security.version}</version>
             </dependency>
             <dependency>
                 <groupId>ir.msob.jima.security</groupId>
-                <artifactId>security-starter-restful-test</artifactId>
+                <artifactId>security-starter-restful-oauth2-test</artifactId>
                 <version>${jima-security.version}</version>
             </dependency>
             <dependency>
@@ -237,6 +247,16 @@
             <dependency>
                 <groupId>ir.msob.jima.crud</groupId>
                 <artifactId>crud-starter-rsocket-test</artifactId>
+                <version>${jima-crud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.crud</groupId>
+                <artifactId>crud-starter-sql</artifactId>
+                <version>${jima-crud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.crud</groupId>
+                <artifactId>crud-starter-postgre-test</artifactId>
                 <version>${jima-crud.version}</version>
             </dependency>
         </dependencies>
