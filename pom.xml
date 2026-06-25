@@ -71,6 +71,16 @@
             </dependency>
             <dependency>
                 <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-platform-mongo-api</artifactId>
+                <version>${jima-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-platform-mongo-reactive</artifactId>
+                <version>${jima-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
                 <artifactId>jima-platform-core</artifactId>
                 <version>${jima-platform.version}</version>
             </dependency>
@@ -86,6 +96,16 @@
             </dependency>
 
             <!-- Security Dependencies -->
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-security-api</artifactId>
+                <version>${jima-security.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-security-reactive</artifactId>
+                <version>${jima-security.version}</version>
+            </dependency>
             <dependency>
                 <groupId>ir.msob.jima.framework</groupId>
                 <artifactId>jima-security-restful-reactive-starter</artifactId>
@@ -150,6 +170,11 @@
                 <artifactId>jima-process-restful-starter</artifactId>
                 <version>${jima-process.version}</version>
             </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-process-reactive-starter</artifactId>
+                <version>${jima-process.version}</version>
+            </dependency>
 
             <!-- AI Dependencies -->
             <dependency>
@@ -164,6 +189,16 @@
             </dependency>
 
             <!-- CRUD Dependencies -->
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-crud-reactive</artifactId>
+                <version>${jima-crud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-crud-reactive-testing</artifactId>
+                <version>${jima-crud.version}</version>
+            </dependency>
             <dependency>
                 <groupId>ir.msob.jima.framework</groupId>
                 <artifactId>jima-crud-kafka-reactive-starter</artifactId>
@@ -182,6 +217,16 @@
             <dependency>
                 <groupId>ir.msob.jima.framework</groupId>
                 <artifactId>jima-crud-restful-starter</artifactId>
+                <version>${jima-crud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-crud-kafka-reactive-test</artifactId>
+                <version>${jima-crud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-crud-restful-reactive-test</artifactId>
                 <version>${jima-crud.version}</version>
             </dependency>
 
