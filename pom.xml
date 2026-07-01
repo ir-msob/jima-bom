@@ -94,6 +94,16 @@
                 <artifactId>jima-platform-test</artifactId>
                 <version>${jima-platform.version}</version>
             </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-platform-mongo-testing</artifactId>
+                <version>${jima-platform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-platform-kafka-testing</artifactId>
+                <version>${jima-platform.version}</version>
+            </dependency>
 
             <!-- Security Dependencies -->
             <dependency>
@@ -126,6 +136,11 @@
                 <artifactId>jima-security-kafka-starter</artifactId>
                 <version>${jima-security.version}</version>
             </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-security-keycloak-testing</artifactId>
+                <version>${jima-security.version}</version>
+            </dependency>
 
             <!-- Storage Dependencies -->
             <dependency>
@@ -146,6 +161,11 @@
             <dependency>
                 <groupId>ir.msob.jima.framework</groupId>
                 <artifactId>jima-storage-restful-starter</artifactId>
+                <version>${jima-storage.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ir.msob.jima.framework</groupId>
+                <artifactId>jima-storage-minio-testing</artifactId>
                 <version>${jima-storage.version}</version>
             </dependency>
 
